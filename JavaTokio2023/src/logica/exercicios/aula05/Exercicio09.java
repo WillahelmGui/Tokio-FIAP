@@ -7,13 +7,23 @@ public class Exercicio09 {
 		
 		Scanner sc = new Scanner(System.in);
 		String numeroDigitado = sc.nextLine();
-		for (int i = 0; i < 3; i++) {
+		for (int i = 2; i > -1; i--) {
+			
 			char posAtual = numeroDigitado.charAt(i);
-			char zero = 0;
-			char zeroSoma = 0;
-			System.out.println(posAtual);
-			zero += zeroSoma;
-			System.out.println(zero);
+			char zero = 48;
+			
+			if (i == 2) {
+				System.out.printf("\n %s", posAtual);
+				continue;
+			}
+			
+			
+			if (i == 0) {
+				System.out.printf("\n %s%s%s", posAtual, zero, zero);
+				continue;
+			}
+			System.out.printf("\n %s%s", posAtual, zero);
 		}
+		sc.close();
 	}
 }
