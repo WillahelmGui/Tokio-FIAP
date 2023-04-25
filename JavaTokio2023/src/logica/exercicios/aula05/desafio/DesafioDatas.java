@@ -50,12 +50,14 @@ public class DesafioDatas {
 		if(m == 12) {
 			m = 0;
 			a++;
-			qtdAnos++;
-		
+			if(qtdMeses < 12) {
+				continue;
+			}
+			++qtdAnos;
 		}
 		}while(a != aa || m != ma || d != da);
 			
-		System.out.printf("Você viveu \n Dias: %s  \n Meses: %s \n Anos: %s ", qtdDias, qtdMeses, qtdAnos);
+		System.out.printf("Você viveu \n Dias: %s  \n Meses: %s \n Anos: %s ", (qtdDias / qtdMeses),(qtdMeses / qtdAnos), qtdAnos);
 	}
 
 }
