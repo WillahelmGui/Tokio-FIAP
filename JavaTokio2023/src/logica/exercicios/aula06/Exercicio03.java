@@ -9,7 +9,7 @@ public class Exercicio03 {
 		notas = new double[4];
 		double somaNota= 0.0;
 		//atribuindo notas aleatorias para o vetor notas
-		for(int i=0 ; i < 4; i++) {
+		for(int i=0 ; i <= 3; i++) {
 			notas[i] = ((double) Math.random() * 10);
 			System.out.println((df.format(notas[i])));
 			somaNota += notas[i];	
