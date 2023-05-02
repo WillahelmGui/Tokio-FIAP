@@ -14,5 +14,6 @@ public class Exercicio04 {
 		}
 		System.out.println("A soma de todos os números é: ");
 		System.out.println(somaNum);
+		sc.close();
 	}
 }

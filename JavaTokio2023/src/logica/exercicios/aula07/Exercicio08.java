@@ -10,5 +10,6 @@ public class Exercicio08 {
 		num += (i - 1);
 		}
 		System.out.println("A soma de todos os números é: " + num);
+		sc.close();
 	}
 }

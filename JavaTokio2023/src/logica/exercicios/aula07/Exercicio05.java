@@ -16,5 +16,6 @@ public class Exercicio05 {
 		}
 		System.out.println("O maior de todos os números é: ");
 		System.out.println(somaNum);
+		sc.close();
 	}
 }

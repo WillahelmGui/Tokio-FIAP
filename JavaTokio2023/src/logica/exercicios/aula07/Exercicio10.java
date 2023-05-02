@@ -11,20 +11,31 @@ import java.util.ArrayList; // import the ArrayList class
 //▪ Você precisará colocar uma estrutura de repetição
 
 public class Exercicio10 {
-	static int limite= 2000;
-	ArrayList<int[]> numerosPrimos = new ArrayList<int[]>();
+	static int limite = 2000;
+	static ArrayList<Integer> numerosPrimos = new ArrayList<>();
 
 	public static void main(String[] args) {
-		if(Primo(3) == true) {
-			System.out.println("Numero primo?" + Primo(3));
+		numerosPrimos.add(2);
+		
+		for (int i = 3; i < limite; i++) {
+			if (verificarNumPrimo(i) == true) {
+				System.out.printf("O número %s é primo. \n", i);
+				numerosPrimos.add(i);
+			} else {
+				System.out.printf("O numero %s nao e primo. \n", i);
+			}
 		}
-
+		System.out.println(numerosPrimos);
 	}
-	
-	public static boolean Primo(int num) {
+
+	static boolean verificarNumPrimo(int num) {
 		for (int j = 2; j < num; j++) {
-			if (num % j == 0)
+			if (num % j == 0) {
 				return false;
+			} else {
+				return true;
+			}
+
 		}
 		return true;
 	}

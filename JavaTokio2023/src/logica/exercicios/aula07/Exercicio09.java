@@ -20,6 +20,8 @@ public class Exercicio09 {
 		if(num % i == 0) {
 			System.out.println(i);
 		}
+		
 		}
+		sc.close();
 	}
 }
