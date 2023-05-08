@@ -1,4 +1,4 @@
-package lagic.aulas.aula08;
+package logica.aulas.aula08;
 
 import java.util.Calendar;
 import java.util.Date;
